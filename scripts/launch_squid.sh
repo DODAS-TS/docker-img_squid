@@ -2,15 +2,15 @@
 
 /etc/init.d/frontier-squid start
 
-# while true; do
+while true; do
 
-#   string=`/etc/init.d/frontier-squid status`
+  string=`/etc/init.d/frontier-squid status`
 
-#   if [[ $string != *"Frontier Squid running"* ]]; then
-#     echo "not running"
-#     break
-#   fi
+  if [[ $string != *"Frontier Squid running"* ]]; then
+    echo "not running"
+    break
+  fi
 
-# done
+done
 
-# echo "Exiting."
+echo "Exiting."
